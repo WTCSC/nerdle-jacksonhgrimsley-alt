@@ -1,11 +1,36 @@
-<!-- 
-   Assignment Notes:
-   - To run the game, execute `python3 nerdle.py` in the terminal.
-   - Your task is to implement the equation generation functions in `equation_generator.py` and the solution validator in `game_engine.py`.
-   - Don't forget to import your modules.
-   - PAY ATTENTION TO THE TODO COMMENTS IN THE CODE.
-   - Each function has comments detailing its purpose and requirements.
-   - Code is automatically tested *every time* you push changes to GitHub.
--->
+-How to Play
+--
+--The game generates a random valid equation (addition, subtraction, multiplication, or division) that is exactly 8 characters long.
 
-# Nerdle
+--You have 6 attempts to guess it.
+
+-Each guess must:
+
+--Be exactly 8 characters long.
+
+--Use only digits and the operators +, -, *, /, and =.
+
+--Contain exactly one =.
+
+--Be mathematically correct (e.g., 12+30=42 is valid; 12+30=41 is not).
+
+-Running the Game
+--
+--python nerdle.py
+-Example Valid Equations
+
+--12+30=42
+
+--99-11=88
+
+--8*11=88
+
+--88/11=8
+
+-contribution
+--
+--Others can review and give feedback on my code.
+
+-licence
+--
+--This project is licensed under the MIT License

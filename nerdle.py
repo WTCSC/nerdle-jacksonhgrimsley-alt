@@ -74,11 +74,7 @@ def get_player_guess():
             continue
         
         return guess
-
-
-
-
-
+    
 def play_game():
     """
     Main game loop for a single game of Nerdle.
@@ -119,9 +115,9 @@ def play_game():
             print()
             
             if game_state['won']:
-                print("🎉 CONGRATULATIONS! You solved the equation! 🎉")
+                print(" CONGRATULATIONS! You solved the equation! ")
             else:
-                print("😞 Better luck next time!")
+                print(" Better luck next time!")
                 print(f"The correct equation was: {target_equation}")
     
     # Ask if player wants to play again
@@ -196,7 +192,7 @@ def run_quick_test():
     game, message = game_engine.process_guess(game, guess)
     print(f"   Processed guess '{guess}': {message}")
     
-    print("\n✅ All components working correctly!")
+    print("\n All components working correctly!")
 
 
 # Run the game when this file is executed directly

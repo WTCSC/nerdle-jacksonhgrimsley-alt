@@ -26,7 +26,7 @@ def is_valid_guess(guess):
            return False
    if guess.count('=') != 1:
        return False
-   if not equation_generator(guess):
+   if not equation_generator.validate_equation(guess):
        return False
    
    return
@@ -200,7 +200,7 @@ def format_feedback_plain(guess, feedback):
 def process_guess(game_state, guess):
     """
     Process a player's guess and update the game state.
-    
+  
     Args:
         game_state (dict): Current game state
         guess (str): The player's guess
